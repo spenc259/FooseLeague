@@ -1,0 +1,129 @@
+Project_Notes.txt
+
+create a league table system to be used for the office foosball.
+
+main aims:
+
+display a league,
+enter/create teams in a 1 man or 2 man format,
+create a fixture list,
+enter scores to update fixture and league views 
+
+
+Database Info:
+user:
+password:
+
+LAST THING I WORKED ON
+
+	- work on the login system - created a userlogin model
+
+What to do next:
+
+
+
+ 	- work on the account section 
+ 
+ 	- create a league and enter teams
+
+ 	- once I can create a league and enter teams, work on the fixture generation
+
+ 	- scoring submissions
+
+ 
+
+TO DO:
+
+account.php 
+ - account details entered into the login system
+ 
+
+league.php
+ - create a league creation form
+  - name
+  - type
+   - singles / doubles
+  - format - knockout / round robin
+  - enter competitors
+   - email competitors to get them to confirm their entry "you have been invited, click to register"
+ - view league (dashboard) - completed the code to display, needs tied in with users
+  - enter league name to view
+
+fixtures.php
+ - create fixture list
+
+register.php
+ - create a register form
+  - name email
+
+
+
+when viewing league
+ - list teams by player id
+
+ A PLAYER IS A TEAM!!!!
+
+
+
+build league creation form
+
+Build login system
+
+create the template system (require the correct pages)
+
+build the fixture list generation functions ( formats - knockout, round robin, both )
+
+build the score submission system
+
+
+
+GENERAL 
+
+create user for database
+
+
+DONE
+
+create a database class to connect, get, insert, update and delete data in a OOP methodology 
+ - done (need to test update and delete when building account page?)
+
+created the base pages
+
+separated the header and footer into includes
+
+create a directory section in my main httpd.conf file instead of using .htaccess files in public and app directories
+
+create the mvc structure to allow for URL routing, this will enable me to separate my code into models, views and controllers.
+
+separate code into MVC structure (routing is the main issue here)
+
+DATABASE 
+
+Create the following tables
+
+League
+	- id
+	- name
+	- player id's
+	- type
+	- format
+
+player
+	- id
+	- name
+	- played
+	- won
+	- lost
+	- drawn
+	- points
+	- goals for
+	- goals against
+	- goal difference
+
+user
+	- id
+	- name
+	- email
+	- password (hashed)
+	- player id
+	- loged in

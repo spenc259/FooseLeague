@@ -1,0 +1,157 @@
+/* 
+
+League Table V0.0.1
+
+Author: Paul Spence
+
+*/
+
+/* Fonts */
+
+/*
+
+font-family: 'Oswald', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Dosis', sans-serif;
+
+*/
+
+/* General Styles */
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #737676;
+	font-family: 'Oswald', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Dosis', sans-serif;
+}
+
+* {
+	/*box-sizing: border-box;*/
+}
+
+/* Typograhy */
+
+html {
+	font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Oswald', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Dosis', sans-serif;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1rem;
+}
+
+/* Navigation */
+
+nav, .sub-menu {
+	background: #33aabe;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	list-style: none;
+	display: inline-flex;
+	position: relative;
+}
+
+nav li a {
+	padding: 1rem;
+	text-decoration: none;
+	color: #fff;
+}
+
+.sub-menu {
+    position: absolute;
+    left: 0px;
+    top: 46px;
+    min-width: 150px;
+    display: none;
+}
+
+.sub-menu li, .sub-menu li a {
+    width: 100%;
+}
+
+nav li:hover .sub-menu {
+	display: block;
+}
+
+/* Links */
+
+a {}
+
+a:hover {
+	background: #2c9aae;
+}
+
+/* Intro */
+
+.intro {}
+
+
+/* forms */
+
+label {
+    display: block;
+    margin: 0 0 5px;
+}
+
+form div {
+    margin: 0 0 15px;
+}
+
+input {
+	background: #fff;
+	border: 1px solid #737676;
+}
+
+
+/* Structure */
+
+.wrap {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.container {
+	padding: 1rem;
+}
+
+
+/* Header */
+
+
+/* Footer */
+
+footer {
+    background: #efefef;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 2rem;
+}
+
+
+/* team.php */
+
+.team_entry {
+    border-bottom: 1px solid #efefef !important;
+    padding: 0 0 15px;
+}
